@@ -2,10 +2,9 @@
 
 text = input("Enter text: ").replace(" ", "").upper()
 key = [3, 1, 4, 2]
-
 while len(text) % 4 != 0:
     text += "X"
-
+    
 //Encryption
 
 encrypted = ""
