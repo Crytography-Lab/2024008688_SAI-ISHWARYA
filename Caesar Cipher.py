@@ -1,11 +1,11 @@
-# Caesar Cipher
+//Caesar Cipher
 
 text = input("Enter message: ")
 key = int(input("Enter key: "))
 
-# Encryption
-encrypted = ""
+//Encryption
 
+encrypted = ""
 for ch in text:
     if ch.isalpha():
         encrypted += chr((ord(ch.upper()) - 65 + key) % 26 + 65)
@@ -14,13 +14,12 @@ for ch in text:
 
 print("Encrypted:", encrypted)
 
-# Decryption
-decrypted = ""
+// Decryption
 
+decrypted = ""
 for ch in encrypted:
     if ch.isalpha():
         decrypted += chr((ord(ch.upper()) - 65 - key) % 26 + 65)
     else:
         decrypted += ch
-
 print("Decrypted:", decrypted)
